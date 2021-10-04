@@ -1,0 +1,108 @@
+@media only screen and (max-width: 989px){
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    a{
+        text-decoration: none !important;
+    }
+    li{
+        list-style: none !important;
+    }
+
+    .headerMobile{
+        width: 96%;
+        height: 97px;
+        top: 0;
+        z-index: 2000;
+        padding-top: 25px;
+        position: fixed;
+        background: #FFFFFF;
+        display: block;
+        border-bottom: 1px solid #2980b9;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+
+    .mobile-nav span{
+        font-size: 22px;
+        color: #ffffff;
+    }
+
+    .mobile-nav .mobile-nav-trigger{
+        width: 82px;
+        height: 97px;
+        position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #FFFFFF;
+		background-repeat: no-repeat;
+		background-position: center;
+        background-image: url(./images/burguer.png);
+        border-bottom: 1px solid #2980b9;
+    }
+
+    .mobile-nav ul{
+        width: 100%;
+        top: 74px;
+        left: 0;
+        padding-bottom: 15px;
+        display: none;
+		position: fixed;
+		background-color: #FFFFFF;
+        transition: 0.5s ease-in;
+        border-bottom: 1px solid #2980b9; 
+    }
+
+    .mobile-nav li{
+        padding: 10px 0 10px 30px;
+    }
+
+    .mobile-nav a{
+	    font-size: 20px;
+        color: #2980b9;
+	}
+}
+
+@media only screen and (max-width: 320px){
+    .headerMobile{
+	    height: 27px;
+	    padding-top: 10px;
+	    padding-left: 20px;
+	  }
+	  .nav{
+		  display: none;
+	  }
+	  .mobile-nav{
+	  	display: block;
+	  	}
+	  	.mobile-nav span{
+	  		font-size: 12px;
+	  	}
+	  	.mobile-nav .mobile-nav-trigger{
+	  		height: 37px;
+	  		width: 41px;
+	  		background-image: url('http://www.xn--12cl2bdbn8kwa7a1a3m8cku.com/mobile-nav-icon.png');
+	   	}
+	  	.mobile-nav ul{
+	  		top: 37px;
+	  		padding-bottom: 10px;
+	  	}
+	  	.mobile-nav li{
+	  		padding: 5px 0 5px 20px;
+	  	}
+	  	.mobile-nav a{
+	  		font-size: 12px;
+	  	}
+}
